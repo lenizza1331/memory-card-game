@@ -16,7 +16,7 @@ background: linear-gradient(191deg, rgba(176,231,255,1) 0%, rgba(36,52,138,1) 10
     font-family: 'Permanent Marker', cursive;
 }
 h1 {
-    color: rgb(226, 63, 63);
+    color: rgb(212, 89, 89);
     text-shadow: 1px 1px 1px #000;
     font-size: 40px;
 }
@@ -38,8 +38,8 @@ p{
 }
 
 .memory-game {
-    width: 650px;
-    height: 650px;
+    width: 50%;
+    height: 80%;
     margin: auto;
     display: flex;
     flex-flow: row wrap;
@@ -79,11 +79,16 @@ p{
     background-color: #f06565;
 }
 
-
+@media all and (max-width:1024px){
+    .memory-game {
+        width: 75%;
+        height: 70%;
+    }
+}
 @media all and (max-width:560px){
     .memory-game {
-        width: 350px;
-        height: 350px;
+        width: 90%;
+        height: 50%;
     }
     h1 {
         font-size: 30px;
@@ -94,8 +99,8 @@ p{
 }
 @media all and (max-width:350px){
     .memory-game {
-        width: 250px;
-        height: 250px;
+        width: 90%;
+        height: 40%;
     }
     h1{
         font-size: 20px;

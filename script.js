@@ -1,3 +1,41 @@
+gsap.from('h1', {
+    y: -20,
+    opacity: 0,
+    duration: 1
+})
+gsap.to('p', {
+    text: 'Find all pairs of pictures',
+    duration: 2,
+    delay: 1.5
+})
+
+gsap.from("img", {
+    duration: 3,
+    scale: 0.7,
+    y: 40,
+    opacity:0,
+    ease: "elastic.out(1, 0.2)",
+    stagger: {
+        grid: "auto",
+        from: "edges",
+        axis: "null",
+        amount: 2}
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let firstCard, secondCard;
